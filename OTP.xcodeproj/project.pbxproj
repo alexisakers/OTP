@@ -34,9 +34,9 @@
 		55DD56A61FB0B756008B62BE /* OTPGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */; };
 		55DD56A91FB0B838008B62BE /* OTPGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */; };
 		55DDEB871FB0C6FD004E713B /* TOTPTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */; };
-		55DDEB891FB0E987004E713B /* OTPKeyURIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB881FB0E987004E713B /* OTPKeyURIParser.swift */; };
+		55DDEB891FB0E987004E713B /* OTPKeyURIDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB881FB0E987004E713B /* OTPKeyURIDecoder.swift */; };
 		55DDEB8B1FB0EA58004E713B /* OTPKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8A1FB0EA58004E713B /* OTPKey.swift */; };
-		55DDEB8D1FB0ED03004E713B /* OTPKeyURIParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8C1FB0ED03004E713B /* OTPKeyURIParserTests.swift */; };
+		55DDEB8D1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8C1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift */; };
 		55EFB1101FB11A1500801D78 /* OTPKeyURIEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB10F1FB11A1500801D78 /* OTPKeyURIEncoderTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,9 +74,9 @@
 		55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPGenerationRequest.swift; sourceTree = "<group>"; };
 		55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPGenerationTests.swift; sourceTree = "<group>"; };
 		55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPTestVector.swift; sourceTree = "<group>"; };
-		55DDEB881FB0E987004E713B /* OTPKeyURIParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPKeyURIParser.swift; sourceTree = "<group>"; };
+		55DDEB881FB0E987004E713B /* OTPKeyURIDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPKeyURIDecoder.swift; sourceTree = "<group>"; };
 		55DDEB8A1FB0EA58004E713B /* OTPKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPKey.swift; sourceTree = "<group>"; };
-		55DDEB8C1FB0ED03004E713B /* OTPKeyURIParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPKeyURIParserTests.swift; sourceTree = "<group>"; };
+		55DDEB8C1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPKeyURIDecoderTests.swift; sourceTree = "<group>"; };
 		55EFB10F1FB11A1500801D78 /* OTPKeyURIEncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPKeyURIEncoderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,7 +125,7 @@
 				55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */,
 				55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */,
 				55DDEB8A1FB0EA58004E713B /* OTPKey.swift */,
-				55DDEB881FB0E987004E713B /* OTPKeyURIParser.swift */,
+				55DDEB881FB0E987004E713B /* OTPKeyURIDecoder.swift */,
 				55C496A31FB116ED0034577C /* OTPKeyURIEncoder.swift */,
 				55C4969F1FB1075D0034577C /* OTP+Base32.swift */,
 				5562B4981FB087FE000E0F88 /* Info.plist */,
@@ -139,7 +139,7 @@
 				5562B4A21FB087FE000E0F88 /* HMACTests.swift */,
 				55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */,
 				55C496A11FB113020034577C /* OTPKeyTests.swift */,
-				55DDEB8C1FB0ED03004E713B /* OTPKeyURIParserTests.swift */,
+				55DDEB8C1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift */,
 				55EFB10F1FB11A1500801D78 /* OTPKeyURIEncoderTests.swift */,
 				5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */,
 				55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */,
@@ -285,7 +285,7 @@
 				55C496A41FB116ED0034577C /* OTPKeyURIEncoder.swift in Sources */,
 				55DD56A61FB0B756008B62BE /* OTPGenerationRequest.swift in Sources */,
 				55C496A01FB1075D0034577C /* OTP+Base32.swift in Sources */,
-				55DDEB891FB0E987004E713B /* OTPKeyURIParser.swift in Sources */,
+				55DDEB891FB0E987004E713B /* OTPKeyURIDecoder.swift in Sources */,
 				55DD56A21FB0ADCB008B62BE /* OTPGenerator.swift in Sources */,
 				5562B4BC1FB08BB1000E0F88 /* HMAC.swift in Sources */,
 				55DDEB8B1FB0EA58004E713B /* OTPKey.swift in Sources */,
@@ -300,7 +300,7 @@
 				55C496A21FB113020034577C /* OTPKeyTests.swift in Sources */,
 				5562B4C11FB0A01D000E0F88 /* TestUtilities.swift in Sources */,
 				55DD56A91FB0B838008B62BE /* OTPGenerationTests.swift in Sources */,
-				55DDEB8D1FB0ED03004E713B /* OTPKeyURIParserTests.swift in Sources */,
+				55DDEB8D1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift in Sources */,
 				55EFB1101FB11A1500801D78 /* OTPKeyURIEncoderTests.swift in Sources */,
 				5562B4A31FB087FE000E0F88 /* HMACTests.swift in Sources */,
 				5562B4BF1FB08F4A000E0F88 /* HMACTestVector.swift in Sources */,

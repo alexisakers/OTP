@@ -8,36 +8,36 @@ import Foundation
 @testable import OTP
 
 /**
- * Tests the Key URI parser.
+ * Tests the Key URI decoder.
  */
 
-class OTPKeyURIParserTests: XCTestCase {
+class OTPKeyURIDecoderTests: XCTestCase {
 
     /**
-     * Tests parsing the information label of barcodes.
+     * Tests decoding the information label of barcodes.
      */
 
-    func testParsingLabel() {
+    func testDecodingLabel() {
 
         let label1 = "alice@gmail.com"
-        let parsedLabel1 = OTPKeyURIParser.parseLabel(label1)
-        XCTAssertEqual(parsedLabel1?.accountName, "alice@gmail.com")
-        XCTAssertNil(parsedLabel1?.issuerPrefix)
+        let decodedLabel1 = OTPKeyURIDecoder.decodeLabel(label1)
+        XCTAssertEqual(decodedLabel1?.accountName, "alice@gmail.com")
+        XCTAssertNil(decodedLabel1?.issuerPrefix)
 
         let label2 = "Example:alice@gmail.com"
-        let parsedLabel2 = OTPKeyURIParser.parseLabel(label2)
-        XCTAssertEqual(parsedLabel2?.accountName, "alice@gmail.com")
-        XCTAssertEqual(parsedLabel2?.issuerPrefix, "Example")
+        let decodedLabel2 = OTPKeyURIDecoder.decodeLabel(label2)
+        XCTAssertEqual(decodedLabel2?.accountName, "alice@gmail.com")
+        XCTAssertEqual(decodedLabel2?.issuerPrefix, "Example")
 
         let label3 = "Provider1:Alice%20Smith"
-        let parsedLabel3 = OTPKeyURIParser.parseLabel(label3)
-        XCTAssertEqual(parsedLabel3?.accountName, "Alice Smith")
-        XCTAssertEqual(parsedLabel3?.issuerPrefix, "Provider1")
+        let decodedLabel3 = OTPKeyURIDecoder.decodeLabel(label3)
+        XCTAssertEqual(decodedLabel3?.accountName, "Alice Smith")
+        XCTAssertEqual(decodedLabel3?.issuerPrefix, "Provider1")
 
         let label4 = "Big%20Corporation%3A%20alice%40bigco.com"
-        let parsedLabel4 = OTPKeyURIParser.parseLabel(label4)
-        XCTAssertEqual(parsedLabel4?.accountName, "alice@bigco.com")
-        XCTAssertEqual(parsedLabel4?.issuerPrefix, "Big Corporation")
+        let decodedLabel4 = OTPKeyURIDecoder.decodeLabel(label4)
+        XCTAssertEqual(decodedLabel4?.accountName, "alice@bigco.com")
+        XCTAssertEqual(decodedLabel4?.issuerPrefix, "Big Corporation")
 
     }
 
@@ -51,8 +51,8 @@ class OTPKeyURIParserTests: XCTestCase {
 
         let totpSimpleURI = "otpauth://totp/Example:alice@google.com?secret=JBSWY3DPEHPK3PXP&issuer=Example"
 
-        guard let totpSimpleKey = OTPKeyURIParser.parseURI(totpSimpleURI) else {
-            XCTFail("Could not parse simple TOTP URI.")
+        guard let totpSimpleKey = OTPKeyURIDecoder.decodeURI(totpSimpleURI) else {
+            XCTFail("Could not decode simple TOTP URI.")
             return
         }
 
@@ -68,8 +68,8 @@ class OTPKeyURIParserTests: XCTestCase {
 
         let totpCompleteURI = "otpauth://totp/ACME%20Co:john.doe@email.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&issuer=ACME%20Co&algorithm=SHA256&digits=8&period=15"
 
-        guard let totpCompleteKey = OTPKeyURIParser.parseURI(totpCompleteURI) else {
-            XCTFail("Could not parse simple TOTP URI.")
+        guard let totpCompleteKey = OTPKeyURIDecoder.decodeURI(totpCompleteURI) else {
+            XCTFail("Could not decode complete TOTP URI.")
             return
         }
 
@@ -87,8 +87,8 @@ class OTPKeyURIParserTests: XCTestCase {
 
         let hotpSimpleURI = "otpauth://hotp/Example:alice@google.com?secret=JBSWY3DPEHPK3PXP&issuer=Example&counter=2"
 
-        guard let hotpSimpleKey = OTPKeyURIParser.parseURI(hotpSimpleURI) else {
-            XCTFail("Could not parse simple HOTP URI.")
+        guard let hotpSimpleKey = OTPKeyURIDecoder.decodeURI(hotpSimpleURI) else {
+            XCTFail("Could not decode simple HOTP URI.")
             return
         }
 
@@ -110,28 +110,28 @@ class OTPKeyURIParserTests: XCTestCase {
 
     func testParsingInvalidURIs() {
 
-        let notAnURI = OTPKeyURIParser.parseURI("hello,world\0")
+        let notAnURI = OTPKeyURIDecoder.decodeURI("hello,world\0")
         XCTAssertNil(notAnURI)
 
-        let wrongScheme = OTPKeyURIParser.parseURI("https://www.apple.com/")
+        let wrongScheme = OTPKeyURIDecoder.decodeURI("https://www.apple.com/")
         XCTAssertNil(wrongScheme)
 
-        let noHost = OTPKeyURIParser.parseURI("otpauth://")
+        let noHost = OTPKeyURIDecoder.decodeURI("otpauth://")
         XCTAssertNil(noHost)
 
-        let noQuery = OTPKeyURIParser.parseURI("otpauth://totp/label")
+        let noQuery = OTPKeyURIDecoder.decodeURI("otpauth://totp/label")
         XCTAssertNil(noQuery)
 
-        let invalidMode = OTPKeyURIParser.parseURI("otpauth://otp/label?secret=abc")
+        let invalidMode = OTPKeyURIDecoder.decodeURI("otpauth://otp/label?secret=abc")
         XCTAssertNil(invalidMode)
 
-        let colonContainingLabel = OTPKeyURIParser.parseURI("otpauth://totp/prefix:username:alexis?secret=abc")
+        let colonContainingLabel = OTPKeyURIDecoder.decodeURI("otpauth://totp/prefix:username:alexis?secret=abc")
         XCTAssertNil(colonContainingLabel)
 
-        let missingSecret = OTPKeyURIParser.parseURI("otpauth://totp/prefix:username?key=abc")
+        let missingSecret = OTPKeyURIDecoder.decodeURI("otpauth://totp/prefix:username?key=abc")
         XCTAssertNil(missingSecret)
 
-        let missingCounter = OTPKeyURIParser.parseURI("otpauth://hotp/prefix:username?secret=JBSWY3DPEHPK3PXP")
+        let missingCounter = OTPKeyURIDecoder.decodeURI("otpauth://hotp/prefix:username?secret=JBSWY3DPEHPK3PXP")
         XCTAssertNil(missingCounter)
 
     }

@@ -6,19 +6,19 @@
 import Foundation
 
 /**
- * Parses OTP key URIs, in the google-authenticator format.
+ * Decodes OTP key URIs, in the google-authenticator format.
  */
 
-public enum OTPKeyURIParser {
+public enum OTPKeyURIDecoder {
 
     /**
-     * Parses an OTP key URI encoded in the google-authenticator format.
+     * Decodes an OTP key URI encoded in the google-authenticator format.
      *
-     * - parameter stringValue: The key URI to parse.
-     * - returns: The parsed key, or `nil` if the URI is not valid.
+     * - parameter stringValue: The key URI to decode.
+     * - returns: The decoded key, or `nil` if the URI is not valid.
      */
 
-    public static func parseURI(_ stringValue: String) -> OTPKey? {
+    public static func decodeURI(_ stringValue: String) -> OTPKey? {
 
         // Context
 
@@ -44,17 +44,17 @@ public enum OTPKeyURIParser {
             return nil
         }
 
-        // Parsing
+        // Decoding
 
         guard let mode = OTPKey.Mode(rawValue: host) else {
             return nil
         }
 
-        guard let label = parseLabel(path) else {
+        guard let label = decodeLabel(path) else {
             return nil
         }
 
-        guard let secret = parseSecret(from: queryItems) else {
+        guard let secret = extractSecret(from: queryItems) else {
             return nil
         }
 
@@ -62,7 +62,7 @@ public enum OTPKeyURIParser {
 
         if mode == .hotp {
 
-            guard let counter = parseCounter(from: queryItems) else {
+            guard let counter = extractCounter(from: queryItems) else {
                 return nil
             }
 
@@ -76,10 +76,10 @@ public enum OTPKeyURIParser {
     }
 
     /**
-     * Parses the label section of a Key URI.
+     * Decodes the label section of a Key URI.
      */
 
-    static func parseLabel(_ labelString: String) -> (accountName: String, issuerPrefix: String?)? {
+    static func decodeLabel(_ labelString: String) -> (accountName: String, issuerPrefix: String?)? {
 
         guard let decodedString = labelString.removingPercentEncoding else {
             return nil
@@ -114,7 +114,7 @@ public enum OTPKeyURIParser {
      * Extracts the secret from the query items.
      */
 
-    static func parseSecret(from queryItems: [URLQueryItem]) -> Data? {
+    static func extractSecret(from queryItems: [URLQueryItem]) -> Data? {
 
         guard let secret = queryItems["secret"] else {
             return nil
@@ -128,7 +128,7 @@ public enum OTPKeyURIParser {
      * Extracts the counter from the query items.
      */
 
-    static func parseCounter(from queryItems: [URLQueryItem]) -> UInt64? {
+    static func extractCounter(from queryItems: [URLQueryItem]) -> UInt64? {
 
         guard let counter = queryItems["counter"] else {
             return nil
