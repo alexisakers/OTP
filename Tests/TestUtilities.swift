@@ -7,10 +7,6 @@ import Foundation
 
 extension Data: ExpressibleByStringLiteral {
 
-    /**
-     * Creates a Data buffer from a hex string.
-     */
-
     init(hexString: String) {
 
         var data = [UInt8]()
@@ -36,11 +32,10 @@ extension Data: ExpressibleByStringLiteral {
         self.init(hexString: value)
     }
 
-    /// The hex representation of the data buffer.
     var hexString: String {
 
         return reduce("") {
-            let hex = String($1, radix: 16)
+            let hex = String($1, radix: 16).uppercased()
             let fullHex = hex.count > 1 ? hex : "0\(hex)"
             return $0 + fullHex
         }

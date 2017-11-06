@@ -27,6 +27,10 @@
 		5562B4BC1FB08BB1000E0F88 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
 		5562B4BF1FB08F4A000E0F88 /* HMACTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */; };
 		5562B4C11FB0A01D000E0F88 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */; };
+		55DD56A21FB0ADCB008B62BE /* OTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */; };
+		55DD56A61FB0B756008B62BE /* OTPGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */; };
+		55DD56A91FB0B838008B62BE /* OTPGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */; };
+		55DDEB871FB0C6FD004E713B /* TOTPTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		5562B4BB1FB08BB1000E0F88 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
 		5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTestVector.swift; sourceTree = "<group>"; };
 		5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
+		55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPGenerator.swift; sourceTree = "<group>"; };
+		55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPGenerationRequest.swift; sourceTree = "<group>"; };
+		55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPGenerationTests.swift; sourceTree = "<group>"; };
+		55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOTPTestVector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 			children = (
 				5562B4971FB087FE000E0F88 /* OTP.h */,
 				5562B4BB1FB08BB1000E0F88 /* HMAC.swift */,
+				55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */,
+				55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */,
 				5562B4981FB087FE000E0F88 /* Info.plist */,
 			);
 			path = Sources;
@@ -109,7 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				5562B4A21FB087FE000E0F88 /* HMACTests.swift */,
+				55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */,
 				5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */,
+				55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */,
 				5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */,
 				5562B4A41FB087FF000E0F88 /* Info.plist */,
 			);
@@ -249,6 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DD56A61FB0B756008B62BE /* OTPGenerationRequest.swift in Sources */,
+				55DD56A21FB0ADCB008B62BE /* OTPGenerator.swift in Sources */,
 				5562B4BC1FB08BB1000E0F88 /* HMAC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DDEB871FB0C6FD004E713B /* TOTPTestVector.swift in Sources */,
 				5562B4C11FB0A01D000E0F88 /* TestUtilities.swift in Sources */,
+				55DD56A91FB0B838008B62BE /* OTPGenerationTests.swift in Sources */,
 				5562B4A31FB087FE000E0F88 /* HMACTests.swift in Sources */,
 				5562B4BF1FB08F4A000E0F88 /* HMACTestVector.swift in Sources */,
 			);

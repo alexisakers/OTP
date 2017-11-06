@@ -12,22 +12,22 @@ import CommonCrypto
  * Use objects of this type to authenticate messages with HMAC hashes.
  */
 
-enum HMAC {
+public enum HMAC: Int {
 
     /// The HMAC-SHA-1 algorithm.
-    case sha1
+    case sha1 = 1
 
     /// The HMAC-SHA-1 algorithm.
-    case sha224
+    case sha224 = 224
 
     /// The HMAC-SHA-1 algorithm.
-    case sha256
+    case sha256 = 256
 
     /// The HMAC-SHA-1 algorithm.
-    case sha384
+    case sha384 = 384
 
     /// The HMAC-SHA-1 algorithm.
-    case sha512
+    case sha512 = 512
 
 }
 
