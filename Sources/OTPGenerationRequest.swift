@@ -56,14 +56,7 @@ extension OTPGenerationRequest {
             movingCounter = UInt64(factor)
         }
 
-        var message = [UInt8](repeating: 0, count: 8)
-
-        for i in (0 ..< message.count).reversed() {
-            message[i] = UInt8(movingCounter & 0xff);
-            movingCounter >>= 8;
-        }
-
-        return Data(message)
+        return OTPGenerationRequest.makeMovingFactorBytes(with: movingCounter)
 
     }
 
@@ -97,6 +90,21 @@ extension OTPGenerationRequest {
         case .totp(_, _, _, _, _, let hmac):
             return hmac
         }
+
+    }
+
+    static func makeMovingFactorBytes(with movingFactor: UInt64) -> Data {
+
+        var movingFactor = movingFactor
+
+        var message = [UInt8](repeating: 0, count: 8)
+
+        for i in (0 ..< message.count).reversed() {
+            message[i] = UInt8(movingFactor & 0xff);
+            movingFactor >>= 8;
+        }
+
+        return Data(message)
 
     }
 

@@ -9,7 +9,7 @@ import Foundation
  * Generates HOTP authentication codes from a generation request.
  */
 
-public class OTPGenerator {
+public enum OTPGenerator {
 
     static let powerDigits: [Int] = [1,10,100,1000,10000,100000,1000000,10000000,100000000]
 

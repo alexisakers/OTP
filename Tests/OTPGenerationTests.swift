@@ -62,10 +62,6 @@ class OTPGenerationTests: XCTestCase {
         for testHash in testHashes {
             let digest = OTPGenerator.authenticate(testHash.0)
             XCTAssertEqual(digest, testHash.1)
-
-            print(digest.hexString)
-            print(testHash.1.hexString)
-
         }
 
     }
@@ -102,10 +98,6 @@ class OTPGenerationTests: XCTestCase {
             XCTAssertEqual(hash, totpVector.expectedHash)
 
             XCTAssertEqual(code, totpVector.expectedTOTP)
-
-            if code != totpVector.expectedTOTP {
-                print("FAIL >> SHA-\(totpVector.hmac.rawValue)")
-            }
 
         }
 
