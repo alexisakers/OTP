@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TOTP.xcodeproj">
+      location = "self:/Users/aleks/Developer/OSS/TOTP/OTP.xcodeproj">
    </FileRef>
 </Workspace>

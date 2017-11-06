@@ -1,11 +1,11 @@
 /**
- *  TOTP
+ *  OTP
  *  Copyright (c) 2017 Alexis Aubry. Licensed under the MIT license.
  */
 
 import Foundation
 import XCTest
-@testable import TOTP
+@testable import OTP
 
 /**
  * Represents a HMAC test vector, i.g. the data used to verify our implementation.

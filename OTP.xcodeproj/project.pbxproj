@@ -21,9 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5562B49E1FB087FE000E0F88 /* TOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5562B4941FB087FE000E0F88 /* TOTP.framework */; };
+		5562B49E1FB087FE000E0F88 /* OTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5562B4941FB087FE000E0F88 /* OTP.framework */; };
 		5562B4A31FB087FE000E0F88 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4A21FB087FE000E0F88 /* HMACTests.swift */; };
-		5562B4A51FB087FF000E0F88 /* TOTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* TOTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5562B4A51FB087FF000E0F88 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5562B4BC1FB08BB1000E0F88 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
 		5562B4BF1FB08F4A000E0F88 /* HMACTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */; };
 		5562B4C11FB0A01D000E0F88 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */; };
@@ -47,10 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5562B4941FB087FE000E0F88 /* TOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5562B4971FB087FE000E0F88 /* TOTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTP.h; sourceTree = "<group>"; };
+		5562B4941FB087FE000E0F88 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5562B4971FB087FE000E0F88 /* OTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTP.h; sourceTree = "<group>"; };
 		5562B4981FB087FE000E0F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5562B49D1FB087FE000E0F88 /* TOTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5562B49D1FB087FE000E0F88 /* OTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5562B4A21FB087FE000E0F88 /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
 		5562B4A41FB087FF000E0F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5562B4BB1FB08BB1000E0F88 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5562B49E1FB087FE000E0F88 /* TOTP.framework in Frameworks */,
+				5562B49E1FB087FE000E0F88 /* OTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +89,8 @@
 		5562B4951FB087FE000E0F88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5562B4941FB087FE000E0F88 /* TOTP.framework */,
-				5562B49D1FB087FE000E0F88 /* TOTPTests.xctest */,
+				5562B4941FB087FE000E0F88 /* OTP.framework */,
+				5562B49D1FB087FE000E0F88 /* OTPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +98,7 @@
 		5562B4961FB087FE000E0F88 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				5562B4971FB087FE000E0F88 /* TOTP.h */,
+				5562B4971FB087FE000E0F88 /* OTP.h */,
 				5562B4BB1FB08BB1000E0F88 /* HMAC.swift */,
 				5562B4981FB087FE000E0F88 /* Info.plist */,
 			);
@@ -123,16 +123,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5562B4A51FB087FF000E0F88 /* TOTP.h in Headers */,
+				5562B4A51FB087FF000E0F88 /* OTP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5562B4931FB087FE000E0F88 /* TOTP */ = {
+		5562B4931FB087FE000E0F88 /* OTP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5562B4A81FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "TOTP" */;
+			buildConfigurationList = 5562B4A81FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTP" */;
 			buildPhases = (
 				5562B48F1FB087FE000E0F88 /* Sources */,
 				5562B4901FB087FE000E0F88 /* Frameworks */,
@@ -144,14 +144,14 @@
 			dependencies = (
 				5562B4B81FB089A2000E0F88 /* PBXTargetDependency */,
 			);
-			name = TOTP;
+			name = OTP;
 			productName = TOTP;
-			productReference = 5562B4941FB087FE000E0F88 /* TOTP.framework */;
+			productReference = 5562B4941FB087FE000E0F88 /* OTP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5562B49C1FB087FE000E0F88 /* TOTPTests */ = {
+		5562B49C1FB087FE000E0F88 /* OTPTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5562B4AB1FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "TOTPTests" */;
+			buildConfigurationList = 5562B4AB1FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTPTests" */;
 			buildPhases = (
 				5562B4991FB087FE000E0F88 /* Sources */,
 				5562B49A1FB087FE000E0F88 /* Frameworks */,
@@ -162,9 +162,9 @@
 			dependencies = (
 				5562B4A01FB087FE000E0F88 /* PBXTargetDependency */,
 			);
-			name = TOTPTests;
+			name = OTPTests;
 			productName = TOTPTests;
-			productReference = 5562B49D1FB087FE000E0F88 /* TOTPTests.xctest */;
+			productReference = 5562B49D1FB087FE000E0F88 /* OTPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5562B48E1FB087FE000E0F88 /* Build configuration list for PBXProject "TOTP" */;
+			buildConfigurationList = 5562B48E1FB087FE000E0F88 /* Build configuration list for PBXProject "OTP" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -205,8 +205,8 @@
 			projectRoot = "";
 			targets = (
 				5562B4B21FB0894A000E0F88 /* CommonCrypto */,
-				5562B4931FB087FE000E0F88 /* TOTP */,
-				5562B49C1FB087FE000E0F88 /* TOTPTests */,
+				5562B4931FB087FE000E0F88 /* OTP */,
+				5562B49C1FB087FE000E0F88 /* OTPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +268,7 @@
 /* Begin PBXTargetDependency section */
 		5562B4A01FB087FE000E0F88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5562B4931FB087FE000E0F88 /* TOTP */;
+			target = 5562B4931FB087FE000E0F88 /* OTP */;
 			targetProxy = 5562B49F1FB087FE000E0F88 /* PBXContainerItemProxy */;
 		};
 		5562B4B81FB089A2000E0F88 /* PBXTargetDependency */ = {
@@ -412,7 +412,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TOTP.TOTP-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -445,7 +445,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TOTP.TOTP-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -466,7 +466,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TOTP-iOS.TOTPTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -483,7 +483,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TOTP-iOS.TOTPTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -512,7 +512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5562B48E1FB087FE000E0F88 /* Build configuration list for PBXProject "TOTP" */ = {
+		5562B48E1FB087FE000E0F88 /* Build configuration list for PBXProject "OTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5562B4A61FB087FF000E0F88 /* Debug */,
@@ -521,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5562B4A81FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "TOTP" */ = {
+		5562B4A81FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5562B4A91FB087FF000E0F88 /* Debug */,
@@ -530,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5562B4AB1FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "TOTPTests" */ = {
+		5562B4AB1FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTPTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5562B4AC1FB087FF000E0F88 /* Debug */,
