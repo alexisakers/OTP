@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5562B4B21FB0894A000E0F88"
-               BuildableName = "CommonCrypto"
-               BlueprintName = "CommonCrypto"
+               BlueprintIdentifier = "5532789B1FB1AAA1009320F3"
+               BuildableName = "OTP.framework"
+               BlueprintName = "OTP-watchOS"
                ReferencedContainer = "container:OTP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,8 +27,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
       <AdditionalOptions>
@@ -48,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5562B4B21FB0894A000E0F88"
-            BuildableName = "CommonCrypto"
-            BlueprintName = "CommonCrypto"
+            BlueprintIdentifier = "5532789B1FB1AAA1009320F3"
+            BuildableName = "OTP.framework"
+            BlueprintName = "OTP-watchOS"
             ReferencedContainer = "container:OTP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5562B4B21FB0894A000E0F88"
-            BuildableName = "CommonCrypto"
-            BlueprintName = "CommonCrypto"
+            BlueprintIdentifier = "5532789B1FB1AAA1009320F3"
+            BuildableName = "OTP.framework"
+            BlueprintName = "OTP-watchOS"
             ReferencedContainer = "container:OTP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

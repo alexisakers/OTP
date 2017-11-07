@@ -6,21 +6,49 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		5562B4B21FB0894A000E0F88 /* CommonCrypto */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 5562B4B31FB0894A000E0F88 /* Build configuration list for PBXAggregateTarget "CommonCrypto" */;
-			buildPhases = (
-				5562B4B61FB08957000E0F88 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = CommonCrypto;
-			productName = CommonCrypto;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
+		553278A41FB1AB05009320F3 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
+		553278A51FB1AB05009320F3 /* OTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */; };
+		553278A61FB1AB05009320F3 /* OTPGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */; };
+		553278A71FB1AB05009320F3 /* OTPKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8A1FB0EA58004E713B /* OTPKey.swift */; };
+		553278A81FB1AB05009320F3 /* OTPKeyURIDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB881FB0E987004E713B /* OTPKeyURIDecoder.swift */; };
+		553278A91FB1AB05009320F3 /* OTPKeyURIEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A31FB116ED0034577C /* OTPKeyURIEncoder.swift */; };
+		553278AA1FB1AB05009320F3 /* OTP+Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4969F1FB1075D0034577C /* OTP+Base32.swift */; };
+		553278B81FB1ABA0009320F3 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
+		553278B91FB1ABA0009320F3 /* OTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */; };
+		553278BA1FB1ABA0009320F3 /* OTPGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */; };
+		553278BB1FB1ABA0009320F3 /* OTPKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8A1FB0EA58004E713B /* OTPKey.swift */; };
+		553278BC1FB1ABA0009320F3 /* OTPKeyURIDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB881FB0E987004E713B /* OTPKeyURIDecoder.swift */; };
+		553278BD1FB1ABA0009320F3 /* OTPKeyURIEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A31FB116ED0034577C /* OTPKeyURIEncoder.swift */; };
+		553278BE1FB1ABA0009320F3 /* OTP+Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4969F1FB1075D0034577C /* OTP+Base32.swift */; };
+		553278BF1FB1ABC4009320F3 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		553278C01FB1ABC4009320F3 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		553278CE1FB1AC1A009320F3 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
+		553278CF1FB1AC1A009320F3 /* OTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */; };
+		553278D01FB1AC1A009320F3 /* OTPGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */; };
+		553278D11FB1AC1A009320F3 /* OTPKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8A1FB0EA58004E713B /* OTPKey.swift */; };
+		553278D21FB1AC1A009320F3 /* OTPKeyURIDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB881FB0E987004E713B /* OTPKeyURIDecoder.swift */; };
+		553278D31FB1AC1A009320F3 /* OTPKeyURIEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A31FB116ED0034577C /* OTPKeyURIEncoder.swift */; };
+		553278D41FB1AC1A009320F3 /* OTP+Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4969F1FB1075D0034577C /* OTP+Base32.swift */; };
+		553278D51FB1AC1E009320F3 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		553278E21FB1AD55009320F3 /* OTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553278B01FB1AB76009320F3 /* OTP.framework */; };
+		553278F11FB1AD64009320F3 /* OTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553278C61FB1ABDF009320F3 /* OTP.framework */; };
+		553278F71FB1AE83009320F3 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4A21FB087FE000E0F88 /* HMACTests.swift */; };
+		553278F81FB1AE83009320F3 /* OTPGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */; };
+		553278F91FB1AE83009320F3 /* OTPKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A11FB113020034577C /* OTPKeyTests.swift */; };
+		553278FA1FB1AE83009320F3 /* OTPKeyURIDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8C1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift */; };
+		553278FB1FB1AE83009320F3 /* OTPKeyURIEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB10F1FB11A1500801D78 /* OTPKeyURIEncoderTests.swift */; };
+		553278FC1FB1AE83009320F3 /* HMACTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */; };
+		553278FD1FB1AE83009320F3 /* TOTPTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */; };
+		553278FE1FB1AE83009320F3 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */; };
+		553278FF1FB1AE84009320F3 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4A21FB087FE000E0F88 /* HMACTests.swift */; };
+		553279001FB1AE84009320F3 /* OTPGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */; };
+		553279011FB1AE84009320F3 /* OTPKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A11FB113020034577C /* OTPKeyTests.swift */; };
+		553279021FB1AE84009320F3 /* OTPKeyURIDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8C1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift */; };
+		553279031FB1AE84009320F3 /* OTPKeyURIEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB10F1FB11A1500801D78 /* OTPKeyURIEncoderTests.swift */; };
+		553279041FB1AE84009320F3 /* HMACTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */; };
+		553279051FB1AE84009320F3 /* TOTPTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */; };
+		553279061FB1AE84009320F3 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */; };
 		5562B49E1FB087FE000E0F88 /* OTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5562B4941FB087FE000E0F88 /* OTP.framework */; };
 		5562B4A31FB087FE000E0F88 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4A21FB087FE000E0F88 /* HMACTests.swift */; };
 		5562B4A51FB087FF000E0F88 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +69,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		553278E31FB1AD55009320F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5562B48B1FB087FE000E0F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553278AF1FB1AB76009320F3;
+			remoteInfo = "OTP-tvOS";
+		};
+		553278F21FB1AD64009320F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5562B48B1FB087FE000E0F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 553278C51FB1ABDF009320F3;
+			remoteInfo = "OTP-macOS";
+		};
 		5562B49F1FB087FE000E0F88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5562B48B1FB087FE000E0F88 /* Project object */;
@@ -48,22 +90,20 @@
 			remoteGlobalIDString = 5562B4931FB087FE000E0F88;
 			remoteInfo = TOTP;
 		};
-		5562B4B71FB089A2000E0F88 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5562B48B1FB087FE000E0F88 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5562B4B21FB0894A000E0F88;
-			remoteInfo = CommonCrypto;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5532789C1FB1AAA1009320F3 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		553278B01FB1AB76009320F3 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		553278C61FB1ABDF009320F3 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		553278D71FB1ACAD009320F3 /* OTPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OTPTests-Info.plist"; sourceTree = "<group>"; };
+		553278D81FB1ACAD009320F3 /* OTP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OTP-Info.plist"; sourceTree = "<group>"; };
+		553278DD1FB1AD55009320F3 /* OTPTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTPTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553278EC1FB1AD64009320F3 /* OTPTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTPTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5562B4941FB087FE000E0F88 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5562B4971FB087FE000E0F88 /* OTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTP.h; sourceTree = "<group>"; };
-		5562B4981FB087FE000E0F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5562B49D1FB087FE000E0F88 /* OTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5562B49D1FB087FE000E0F88 /* OTPTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTPTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5562B4A21FB087FE000E0F88 /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
-		5562B4A41FB087FF000E0F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5562B4BB1FB08BB1000E0F88 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
 		5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTestVector.swift; sourceTree = "<group>"; };
 		5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
@@ -81,6 +121,43 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		553278981FB1AAA1009320F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278AC1FB1AB76009320F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278C21FB1ABDF009320F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278DA1FB1AD55009320F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278E21FB1AD55009320F3 /* OTP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278E91FB1AD64009320F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278F11FB1AD64009320F3 /* OTP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5562B4901FB087FE000E0F88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,9 +176,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553278D61FB1ACAD009320F3 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				553278D81FB1ACAD009320F3 /* OTP-Info.plist */,
+				553278D71FB1ACAD009320F3 /* OTPTests-Info.plist */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		5562B48A1FB087FE000E0F88 = {
 			isa = PBXGroup;
 			children = (
+				553278D61FB1ACAD009320F3 /* Configs */,
 				5562B4961FB087FE000E0F88 /* Sources */,
 				5562B4A11FB087FE000E0F88 /* Tests */,
 				5562B4951FB087FE000E0F88 /* Products */,
@@ -112,7 +199,12 @@
 			isa = PBXGroup;
 			children = (
 				5562B4941FB087FE000E0F88 /* OTP.framework */,
-				5562B49D1FB087FE000E0F88 /* OTPTests.xctest */,
+				5562B49D1FB087FE000E0F88 /* OTPTests-iOS.xctest */,
+				5532789C1FB1AAA1009320F3 /* OTP.framework */,
+				553278B01FB1AB76009320F3 /* OTP.framework */,
+				553278C61FB1ABDF009320F3 /* OTP.framework */,
+				553278DD1FB1AD55009320F3 /* OTPTests-tvOS.xctest */,
+				553278EC1FB1AD64009320F3 /* OTPTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +220,6 @@
 				55DDEB881FB0E987004E713B /* OTPKeyURIDecoder.swift */,
 				55C496A31FB116ED0034577C /* OTPKeyURIEncoder.swift */,
 				55C4969F1FB1075D0034577C /* OTP+Base32.swift */,
-				5562B4981FB087FE000E0F88 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -144,7 +235,6 @@
 				5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */,
 				55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */,
 				5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */,
-				5562B4A41FB087FF000E0F88 /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -152,6 +242,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		553278991FB1AAA1009320F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278BF1FB1ABC4009320F3 /* OTP.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278AD1FB1AB76009320F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278C01FB1ABC4009320F3 /* OTP.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278C31FB1ABDF009320F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278D51FB1AC1E009320F3 /* OTP.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5562B4911FB087FE000E0F88 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,9 +277,99 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5562B4931FB087FE000E0F88 /* OTP */ = {
+		5532789B1FB1AAA1009320F3 /* OTP-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5562B4A81FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTP" */;
+			buildConfigurationList = 553278A11FB1AAA1009320F3 /* Build configuration list for PBXNativeTarget "OTP-watchOS" */;
+			buildPhases = (
+				553278971FB1AAA1009320F3 /* Sources */,
+				553278981FB1AAA1009320F3 /* Frameworks */,
+				553278991FB1AAA1009320F3 /* Headers */,
+				5532789A1FB1AAA1009320F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OTP-watchOS";
+			productName = "OTP-watchOS";
+			productReference = 5532789C1FB1AAA1009320F3 /* OTP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		553278AF1FB1AB76009320F3 /* OTP-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553278B51FB1AB76009320F3 /* Build configuration list for PBXNativeTarget "OTP-tvOS" */;
+			buildPhases = (
+				553278AB1FB1AB76009320F3 /* Sources */,
+				553278AC1FB1AB76009320F3 /* Frameworks */,
+				553278AD1FB1AB76009320F3 /* Headers */,
+				553278AE1FB1AB76009320F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OTP-tvOS";
+			productName = "OTP-tvOS";
+			productReference = 553278B01FB1AB76009320F3 /* OTP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		553278C51FB1ABDF009320F3 /* OTP-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553278CB1FB1ABDF009320F3 /* Build configuration list for PBXNativeTarget "OTP-macOS" */;
+			buildPhases = (
+				553278C11FB1ABDF009320F3 /* Sources */,
+				553278C21FB1ABDF009320F3 /* Frameworks */,
+				553278C31FB1ABDF009320F3 /* Headers */,
+				553278C41FB1ABDF009320F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OTP-macOS";
+			productName = "OTP-macOS";
+			productReference = 553278C61FB1ABDF009320F3 /* OTP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		553278DC1FB1AD55009320F3 /* OTPTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553278E51FB1AD55009320F3 /* Build configuration list for PBXNativeTarget "OTPTests-tvOS" */;
+			buildPhases = (
+				553278D91FB1AD55009320F3 /* Sources */,
+				553278DA1FB1AD55009320F3 /* Frameworks */,
+				553278DB1FB1AD55009320F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553278E41FB1AD55009320F3 /* PBXTargetDependency */,
+			);
+			name = "OTPTests-tvOS";
+			productName = "OTPTests-tvOS";
+			productReference = 553278DD1FB1AD55009320F3 /* OTPTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		553278EB1FB1AD64009320F3 /* OTPTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553278F41FB1AD64009320F3 /* Build configuration list for PBXNativeTarget "OTPTests-macOS" */;
+			buildPhases = (
+				553278E81FB1AD64009320F3 /* Sources */,
+				553278E91FB1AD64009320F3 /* Frameworks */,
+				553278EA1FB1AD64009320F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553278F31FB1AD64009320F3 /* PBXTargetDependency */,
+			);
+			name = "OTPTests-macOS";
+			productName = "OTPTests-macOS";
+			productReference = 553278EC1FB1AD64009320F3 /* OTPTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5562B4931FB087FE000E0F88 /* OTP-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5562B4A81FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTP-iOS" */;
 			buildPhases = (
 				5562B48F1FB087FE000E0F88 /* Sources */,
 				5562B4901FB087FE000E0F88 /* Frameworks */,
@@ -175,16 +379,15 @@
 			buildRules = (
 			);
 			dependencies = (
-				5562B4B81FB089A2000E0F88 /* PBXTargetDependency */,
 			);
-			name = OTP;
+			name = "OTP-iOS";
 			productName = TOTP;
 			productReference = 5562B4941FB087FE000E0F88 /* OTP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5562B49C1FB087FE000E0F88 /* OTPTests */ = {
+		5562B49C1FB087FE000E0F88 /* OTPTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5562B4AB1FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTPTests" */;
+			buildConfigurationList = 5562B4AB1FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTPTests-iOS" */;
 			buildPhases = (
 				5562B4991FB087FE000E0F88 /* Sources */,
 				5562B49A1FB087FE000E0F88 /* Frameworks */,
@@ -195,9 +398,9 @@
 			dependencies = (
 				5562B4A01FB087FE000E0F88 /* PBXTargetDependency */,
 			);
-			name = OTPTests;
+			name = "OTPTests-iOS";
 			productName = TOTPTests;
-			productReference = 5562B49D1FB087FE000E0F88 /* OTPTests.xctest */;
+			productReference = 5562B49D1FB087FE000E0F88 /* OTPTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,6 +413,26 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "AURA Media";
 				TargetAttributes = {
+					5532789B1FB1AAA1009320F3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					553278AF1FB1AB76009320F3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					553278C51FB1ABDF009320F3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					553278DC1FB1AD55009320F3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					553278EB1FB1AD64009320F3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
 					5562B4931FB087FE000E0F88 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
@@ -218,10 +441,6 @@
 					5562B49C1FB087FE000E0F88 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
-					};
-					5562B4B21FB0894A000E0F88 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -237,14 +456,53 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5562B4B21FB0894A000E0F88 /* CommonCrypto */,
-				5562B4931FB087FE000E0F88 /* OTP */,
-				5562B49C1FB087FE000E0F88 /* OTPTests */,
+				5562B4931FB087FE000E0F88 /* OTP-iOS */,
+				5532789B1FB1AAA1009320F3 /* OTP-watchOS */,
+				553278AF1FB1AB76009320F3 /* OTP-tvOS */,
+				553278C51FB1ABDF009320F3 /* OTP-macOS */,
+				5562B49C1FB087FE000E0F88 /* OTPTests-iOS */,
+				553278DC1FB1AD55009320F3 /* OTPTests-tvOS */,
+				553278EB1FB1AD64009320F3 /* OTPTests-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5532789A1FB1AAA1009320F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278AE1FB1AB76009320F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278C41FB1ABDF009320F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278DB1FB1AD55009320F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278EA1FB1AD64009320F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5562B4921FB087FE000E0F88 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,23 +519,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5562B4B61FB08957000E0F88 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		553278971FB1AAA1009320F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				553278AA1FB1AB05009320F3 /* OTP+Base32.swift in Sources */,
+				553278A41FB1AB05009320F3 /* HMAC.swift in Sources */,
+				553278A51FB1AB05009320F3 /* OTPGenerator.swift in Sources */,
+				553278A81FB1AB05009320F3 /* OTPKeyURIDecoder.swift in Sources */,
+				553278A91FB1AB05009320F3 /* OTPKeyURIEncoder.swift in Sources */,
+				553278A61FB1AB05009320F3 /* OTPGenerationRequest.swift in Sources */,
+				553278A71FB1AB05009320F3 /* OTPKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ -d \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap\" ]; then\necho \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap directory already exists, so skipping the rest of the script.\"\nexit 0\nfi\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap\"\ncat <<EOF > \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap/module.modulemap\"\nmodule CommonCrypto [system] {\n    header \"${SDKROOT}/usr/include/CommonCrypto/CommonCrypto.h\"\n    export *\n}\nEOF\n";
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
+		553278AB1FB1AB76009320F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278BE1FB1ABA0009320F3 /* OTP+Base32.swift in Sources */,
+				553278B81FB1ABA0009320F3 /* HMAC.swift in Sources */,
+				553278B91FB1ABA0009320F3 /* OTPGenerator.swift in Sources */,
+				553278BC1FB1ABA0009320F3 /* OTPKeyURIDecoder.swift in Sources */,
+				553278BD1FB1ABA0009320F3 /* OTPKeyURIEncoder.swift in Sources */,
+				553278BA1FB1ABA0009320F3 /* OTPGenerationRequest.swift in Sources */,
+				553278BB1FB1ABA0009320F3 /* OTPKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278C11FB1ABDF009320F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278D41FB1AC1A009320F3 /* OTP+Base32.swift in Sources */,
+				553278CE1FB1AC1A009320F3 /* HMAC.swift in Sources */,
+				553278CF1FB1AC1A009320F3 /* OTPGenerator.swift in Sources */,
+				553278D21FB1AC1A009320F3 /* OTPKeyURIDecoder.swift in Sources */,
+				553278D31FB1AC1A009320F3 /* OTPKeyURIEncoder.swift in Sources */,
+				553278D01FB1AC1A009320F3 /* OTPGenerationRequest.swift in Sources */,
+				553278D11FB1AC1A009320F3 /* OTPKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278D91FB1AD55009320F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278F71FB1AE83009320F3 /* HMACTests.swift in Sources */,
+				553278F91FB1AE83009320F3 /* OTPKeyTests.swift in Sources */,
+				553278FE1FB1AE83009320F3 /* TestUtilities.swift in Sources */,
+				553278F81FB1AE83009320F3 /* OTPGenerationTests.swift in Sources */,
+				553278FB1FB1AE83009320F3 /* OTPKeyURIEncoderTests.swift in Sources */,
+				553278FA1FB1AE83009320F3 /* OTPKeyURIDecoderTests.swift in Sources */,
+				553278FC1FB1AE83009320F3 /* HMACTestVector.swift in Sources */,
+				553278FD1FB1AE83009320F3 /* TOTPTestVector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		553278E81FB1AD64009320F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553278FF1FB1AE84009320F3 /* HMACTests.swift in Sources */,
+				553279011FB1AE84009320F3 /* OTPKeyTests.swift in Sources */,
+				553279061FB1AE84009320F3 /* TestUtilities.swift in Sources */,
+				553279001FB1AE84009320F3 /* OTPGenerationTests.swift in Sources */,
+				553279031FB1AE84009320F3 /* OTPKeyURIEncoderTests.swift in Sources */,
+				553279021FB1AE84009320F3 /* OTPKeyURIDecoderTests.swift in Sources */,
+				553279041FB1AE84009320F3 /* HMACTestVector.swift in Sources */,
+				553279051FB1AE84009320F3 /* TOTPTestVector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5562B48F1FB087FE000E0F88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,19 +624,254 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		553278E41FB1AD55009320F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553278AF1FB1AB76009320F3 /* OTP-tvOS */;
+			targetProxy = 553278E31FB1AD55009320F3 /* PBXContainerItemProxy */;
+		};
+		553278F31FB1AD64009320F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 553278C51FB1ABDF009320F3 /* OTP-macOS */;
+			targetProxy = 553278F21FB1AD64009320F3 /* PBXContainerItemProxy */;
+		};
 		5562B4A01FB087FE000E0F88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5562B4931FB087FE000E0F88 /* OTP */;
+			target = 5562B4931FB087FE000E0F88 /* OTP-iOS */;
 			targetProxy = 5562B49F1FB087FE000E0F88 /* PBXContainerItemProxy */;
-		};
-		5562B4B81FB089A2000E0F88 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5562B4B21FB0894A000E0F88 /* CommonCrypto */;
-			targetProxy = 5562B4B71FB089A2000E0F88 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		553278A21FB1AAA1009320F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-watchOS";
+				PRODUCT_NAME = OTP;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/watchos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		553278A31FB1AAA1009320F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-watchOS";
+				PRODUCT_NAME = OTP;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/watchos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		553278B61FB1AB76009320F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-tvOS";
+				PRODUCT_NAME = OTP;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/tvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		553278B71FB1AB76009320F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-tvOS";
+				PRODUCT_NAME = OTP;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/tvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		553278CC1FB1ABDF009320F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-macOS";
+				PRODUCT_NAME = OTP;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/macos;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		553278CD1FB1ABDF009320F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-macOS";
+				PRODUCT_NAME = OTP;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/macos;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		553278E61FB1AD55009320F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTPTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		553278E71FB1AD55009320F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTPTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		553278F51FB1AD64009320F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTPTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		553278F61FB1AD64009320F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTPTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		5562B4A61FB087FF000E0F88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -448,20 +997,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = OTP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/ios;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,20 +1028,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = OTP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/ios;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -510,7 +1053,8 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,7 +1071,8 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTP-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,27 +1082,54 @@
 			};
 			name = Release;
 		};
-		5562B4B41FB0894A000E0F88 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75E8K39Z38;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		5562B4B51FB0894A000E0F88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75E8K39Z38;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		553278A11FB1AAA1009320F3 /* Build configuration list for PBXNativeTarget "OTP-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553278A21FB1AAA1009320F3 /* Debug */,
+				553278A31FB1AAA1009320F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553278B51FB1AB76009320F3 /* Build configuration list for PBXNativeTarget "OTP-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553278B61FB1AB76009320F3 /* Debug */,
+				553278B71FB1AB76009320F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553278CB1FB1ABDF009320F3 /* Build configuration list for PBXNativeTarget "OTP-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553278CC1FB1ABDF009320F3 /* Debug */,
+				553278CD1FB1ABDF009320F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553278E51FB1AD55009320F3 /* Build configuration list for PBXNativeTarget "OTPTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553278E61FB1AD55009320F3 /* Debug */,
+				553278E71FB1AD55009320F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553278F41FB1AD64009320F3 /* Build configuration list for PBXNativeTarget "OTPTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553278F51FB1AD64009320F3 /* Debug */,
+				553278F61FB1AD64009320F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5562B48E1FB087FE000E0F88 /* Build configuration list for PBXProject "OTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -567,7 +1139,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5562B4A81FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTP" */ = {
+		5562B4A81FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTP-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5562B4A91FB087FF000E0F88 /* Debug */,
@@ -576,20 +1148,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5562B4AB1FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTPTests" */ = {
+		5562B4AB1FB087FF000E0F88 /* Build configuration list for PBXNativeTarget "OTPTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5562B4AC1FB087FF000E0F88 /* Debug */,
 				5562B4AD1FB087FF000E0F88 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5562B4B31FB0894A000E0F88 /* Build configuration list for PBXAggregateTarget "CommonCrypto" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5562B4B41FB0894A000E0F88 /* Debug */,
-				5562B4B51FB0894A000E0F88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
