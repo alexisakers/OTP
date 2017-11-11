@@ -1,13 +1,13 @@
 /**
- *  OTP
+ *  Crypto
  *  Copyright (c) 2017 Alexis Aubry. Licensed under the MIT license.
  */
 
 import XCTest
-@testable import OTP
+@testable import Crypto
 
 /**
- * A test case that checks the HMAC algorithm with public test vector.
+ * A test case that checks the HMAC algorithm.
  */
 
 class HMACTests: XCTestCase {

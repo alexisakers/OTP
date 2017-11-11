@@ -1,5 +1,5 @@
 /**
- *  OTP
+ *  Crypto
  *  Copyright (c) 2017 Alexis Aubry. Licensed under the MIT license.
  */
 
@@ -17,16 +17,16 @@ public enum HMAC: Int {
     /// The HMAC-SHA-1 algorithm.
     case sha1 = 1
 
-    /// The HMAC-SHA-1 algorithm.
+    /// The HMAC-SHA-224 algorithm.
     case sha224 = 224
 
-    /// The HMAC-SHA-1 algorithm.
+    /// The HMAC-SHA-256 algorithm.
     case sha256 = 256
 
-    /// The HMAC-SHA-1 algorithm.
+    /// The HMAC-SHA-384 algorithm.
     case sha384 = 384
 
-    /// The HMAC-SHA-1 algorithm.
+    /// The HMAC-SHA-512 algorithm.
     case sha512 = 512
 
 }
@@ -36,7 +36,7 @@ public enum HMAC: Int {
 extension HMAC {
 
     /// The raw algorithm identifier for CommonCrypto.
-    private var algorithm: CCHmacAlgorithm {
+    fileprivate var algorithm: CCHmacAlgorithm {
 
         switch self {
         case .sha1: return CCHmacAlgorithm(kCCHmacAlgSHA1)
@@ -49,7 +49,7 @@ extension HMAC {
     }
 
     /// The length of digests produced by the algorithm.
-    private var digestLength: Int {
+    public var digestLength: Int {
 
         switch self {
         case .sha1: return Int(CC_SHA1_DIGEST_LENGTH)
@@ -76,34 +76,22 @@ extension HMAC {
      * - returns: The HMAC digest as a `Data` object.
      */
 
-    func authenticate(_ message: Data, with key: Data) -> Data {
+    public func authenticate(_ message: Data, with key: Data) -> Data {
 
-        let bytesAlignment = MemoryLayout<UInt8>.alignment
+        var buffer = Data(count: digestLength)
 
-        let outputBytes = UnsafeMutableRawPointer.allocate(bytes: digestLength,
-                                                           alignedTo: bytesAlignment)
+        buffer.write(withPointerTo: message, key) { bufferPtr, messageBytes, keyBytes in
 
-        defer {
-            outputBytes.deallocate(bytes: digestLength, alignedTo: bytesAlignment)
-        }
-
-        message.withUnsafeBytes { (messageBytes: UnsafePointer<UInt8>) in
-
-            key.withUnsafeBytes { (keyBytes: UnsafePointer<UInt8>) in
-
-                CCHmac(self.algorithm,
-                       UnsafeRawPointer(keyBytes),
-                       key.count,
-                       UnsafeRawPointer(messageBytes),
-                       message.count,
-                       outputBytes)
-
-            }
+            CCHmac(self.algorithm,
+                    UnsafeRawPointer(keyBytes),
+                    key.count,
+                    UnsafeRawPointer(messageBytes),
+                    message.count,
+                    UnsafeMutableRawPointer(bufferPtr))
 
         }
 
-        let hashBytes = UnsafeRawPointer(outputBytes)
-        return Data(bytes: hashBytes, count: digestLength)
+        return buffer
 
     }
 

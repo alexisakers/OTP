@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		553278A41FB1AB05009320F3 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
+		552C7F571FB76D5D00D9FD60 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F501FB76A4900D9FD60 /* Crypto.framework */; };
+		552C7F581FB76D6800D9FD60 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F551FB76D4D00D9FD60 /* Crypto.framework */; };
+		552C7F5A1FB76D7600D9FD60 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F591FB76D7600D9FD60 /* Crypto.framework */; };
+		552C7F5B1FB76D8400D9FD60 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F521FB76A6500D9FD60 /* Crypto.framework */; };
+		552C7F5F1FB76DD100D9FD60 /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F501FB76A4900D9FD60 /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		552C7F611FB76DE700D9FD60 /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F591FB76D7600D9FD60 /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		552C7F631FB76DFC00D9FD60 /* Crypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F521FB76A6500D9FD60 /* Crypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		552C7F641FB76E9E00D9FD60 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F521FB76A6500D9FD60 /* Crypto.framework */; };
+		552C7F651FB76EAD00D9FD60 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F591FB76D7600D9FD60 /* Crypto.framework */; };
+		552C7F661FB76EB700D9FD60 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552C7F501FB76A4900D9FD60 /* Crypto.framework */; };
 		553278A51FB1AB05009320F3 /* OTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */; };
 		553278A61FB1AB05009320F3 /* OTPGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */; };
 		553278A71FB1AB05009320F3 /* OTPKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8A1FB0EA58004E713B /* OTPKey.swift */; };
 		553278A81FB1AB05009320F3 /* OTPKeyURIDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB881FB0E987004E713B /* OTPKeyURIDecoder.swift */; };
 		553278A91FB1AB05009320F3 /* OTPKeyURIEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A31FB116ED0034577C /* OTPKeyURIEncoder.swift */; };
 		553278AA1FB1AB05009320F3 /* OTP+Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4969F1FB1075D0034577C /* OTP+Base32.swift */; };
-		553278B81FB1ABA0009320F3 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
 		553278B91FB1ABA0009320F3 /* OTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */; };
 		553278BA1FB1ABA0009320F3 /* OTPGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */; };
 		553278BB1FB1ABA0009320F3 /* OTPKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8A1FB0EA58004E713B /* OTPKey.swift */; };
@@ -23,7 +31,6 @@
 		553278BE1FB1ABA0009320F3 /* OTP+Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4969F1FB1075D0034577C /* OTP+Base32.swift */; };
 		553278BF1FB1ABC4009320F3 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		553278C01FB1ABC4009320F3 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		553278CE1FB1AC1A009320F3 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
 		553278CF1FB1AC1A009320F3 /* OTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */; };
 		553278D01FB1AC1A009320F3 /* OTPGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */; };
 		553278D11FB1AC1A009320F3 /* OTPKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8A1FB0EA58004E713B /* OTPKey.swift */; };
@@ -33,27 +40,20 @@
 		553278D51FB1AC1E009320F3 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		553278E21FB1AD55009320F3 /* OTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553278B01FB1AB76009320F3 /* OTP.framework */; };
 		553278F11FB1AD64009320F3 /* OTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553278C61FB1ABDF009320F3 /* OTP.framework */; };
-		553278F71FB1AE83009320F3 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4A21FB087FE000E0F88 /* HMACTests.swift */; };
 		553278F81FB1AE83009320F3 /* OTPGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */; };
 		553278F91FB1AE83009320F3 /* OTPKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A11FB113020034577C /* OTPKeyTests.swift */; };
 		553278FA1FB1AE83009320F3 /* OTPKeyURIDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8C1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift */; };
 		553278FB1FB1AE83009320F3 /* OTPKeyURIEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB10F1FB11A1500801D78 /* OTPKeyURIEncoderTests.swift */; };
-		553278FC1FB1AE83009320F3 /* HMACTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */; };
 		553278FD1FB1AE83009320F3 /* TOTPTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */; };
 		553278FE1FB1AE83009320F3 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */; };
-		553278FF1FB1AE84009320F3 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4A21FB087FE000E0F88 /* HMACTests.swift */; };
 		553279001FB1AE84009320F3 /* OTPGenerationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */; };
 		553279011FB1AE84009320F3 /* OTPKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A11FB113020034577C /* OTPKeyTests.swift */; };
 		553279021FB1AE84009320F3 /* OTPKeyURIDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB8C1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift */; };
 		553279031FB1AE84009320F3 /* OTPKeyURIEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB10F1FB11A1500801D78 /* OTPKeyURIEncoderTests.swift */; };
-		553279041FB1AE84009320F3 /* HMACTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */; };
 		553279051FB1AE84009320F3 /* TOTPTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */; };
 		553279061FB1AE84009320F3 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */; };
 		5562B49E1FB087FE000E0F88 /* OTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5562B4941FB087FE000E0F88 /* OTP.framework */; };
-		5562B4A31FB087FE000E0F88 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4A21FB087FE000E0F88 /* HMACTests.swift */; };
 		5562B4A51FB087FF000E0F88 /* OTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5562B4971FB087FE000E0F88 /* OTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5562B4BC1FB08BB1000E0F88 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BB1FB08BB1000E0F88 /* HMAC.swift */; };
-		5562B4BF1FB08F4A000E0F88 /* HMACTestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */; };
 		5562B4C11FB0A01D000E0F88 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */; };
 		55C496A01FB1075D0034577C /* OTP+Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4969F1FB1075D0034577C /* OTP+Base32.swift */; };
 		55C496A21FB113020034577C /* OTPKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C496A11FB113020034577C /* OTPKeyTests.swift */; };
@@ -92,7 +92,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		552C7F5C1FB76D8D00D9FD60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				552C7F5F1FB76DD100D9FD60 /* Crypto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552C7F601FB76DDA00D9FD60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				552C7F611FB76DE700D9FD60 /* Crypto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552C7F621FB76DEE00D9FD60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				552C7F631FB76DFC00D9FD60 /* Crypto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		552C7F501FB76A4900D9FD60 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
+		552C7F521FB76A6500D9FD60 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/Mac/Crypto.framework; sourceTree = "<group>"; };
+		552C7F551FB76D4D00D9FD60 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/watchOS/Crypto.framework; sourceTree = "<group>"; };
+		552C7F591FB76D7600D9FD60 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/tvOS/Crypto.framework; sourceTree = "<group>"; };
 		5532789C1FB1AAA1009320F3 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		553278B01FB1AB76009320F3 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		553278C61FB1ABDF009320F3 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,9 +143,6 @@
 		5562B4941FB087FE000E0F88 /* OTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5562B4971FB087FE000E0F88 /* OTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTP.h; sourceTree = "<group>"; };
 		5562B49D1FB087FE000E0F88 /* OTPTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OTPTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5562B4A21FB087FE000E0F88 /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
-		5562B4BB1FB08BB1000E0F88 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
-		5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTestVector.swift; sourceTree = "<group>"; };
 		5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
 		55C4969F1FB1075D0034577C /* OTP+Base32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP+Base32.swift"; sourceTree = "<group>"; };
 		55C496A11FB113020034577C /* OTPKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPKeyTests.swift; sourceTree = "<group>"; };
@@ -125,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552C7F581FB76D6800D9FD60 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552C7F5A1FB76D7600D9FD60 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552C7F5B1FB76D8400D9FD60 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552C7F651FB76EAD00D9FD60 /* Crypto.framework in Frameworks */,
 				553278E21FB1AD55009320F3 /* OTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552C7F641FB76E9E00D9FD60 /* Crypto.framework in Frameworks */,
 				553278F11FB1AD64009320F3 /* OTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552C7F571FB76D5D00D9FD60 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552C7F661FB76EB700D9FD60 /* Crypto.framework in Frameworks */,
 				5562B49E1FB087FE000E0F88 /* OTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +220,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552C7F4F1FB76A4900D9FD60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				552C7F591FB76D7600D9FD60 /* Crypto.framework */,
+				552C7F551FB76D4D00D9FD60 /* Crypto.framework */,
+				552C7F521FB76A6500D9FD60 /* Crypto.framework */,
+				552C7F501FB76A4900D9FD60 /* Crypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		553278D61FB1ACAD009320F3 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +247,7 @@
 				5562B4961FB087FE000E0F88 /* Sources */,
 				5562B4A11FB087FE000E0F88 /* Tests */,
 				5562B4951FB087FE000E0F88 /* Products */,
+				552C7F4F1FB76A4900D9FD60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,7 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				5562B4971FB087FE000E0F88 /* OTP.h */,
-				5562B4BB1FB08BB1000E0F88 /* HMAC.swift */,
 				55DD56A11FB0ADCB008B62BE /* OTPGenerator.swift */,
 				55DD56A51FB0B756008B62BE /* OTPGenerationRequest.swift */,
 				55DDEB8A1FB0EA58004E713B /* OTPKey.swift */,
@@ -227,12 +282,10 @@
 		5562B4A11FB087FE000E0F88 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5562B4A21FB087FE000E0F88 /* HMACTests.swift */,
 				55DD56A71FB0B822008B62BE /* OTPGenerationTests.swift */,
 				55C496A11FB113020034577C /* OTPKeyTests.swift */,
 				55DDEB8C1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift */,
 				55EFB10F1FB11A1500801D78 /* OTPKeyURIEncoderTests.swift */,
-				5562B4BD1FB08F45000E0F88 /* HMACTestVector.swift */,
 				55DDEB861FB0C6FD004E713B /* TOTPTestVector.swift */,
 				5562B4C01FB0A01D000E0F88 /* TestUtilities.swift */,
 			);
@@ -338,6 +391,7 @@
 				553278D91FB1AD55009320F3 /* Sources */,
 				553278DA1FB1AD55009320F3 /* Frameworks */,
 				553278DB1FB1AD55009320F3 /* Resources */,
+				552C7F601FB76DDA00D9FD60 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +410,7 @@
 				553278E81FB1AD64009320F3 /* Sources */,
 				553278E91FB1AD64009320F3 /* Frameworks */,
 				553278EA1FB1AD64009320F3 /* Resources */,
+				552C7F621FB76DEE00D9FD60 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,6 +447,7 @@
 				5562B4991FB087FE000E0F88 /* Sources */,
 				5562B49A1FB087FE000E0F88 /* Frameworks */,
 				5562B49B1FB087FE000E0F88 /* Resources */,
+				552C7F5C1FB76D8D00D9FD60 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -525,7 +581,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				553278AA1FB1AB05009320F3 /* OTP+Base32.swift in Sources */,
-				553278A41FB1AB05009320F3 /* HMAC.swift in Sources */,
 				553278A51FB1AB05009320F3 /* OTPGenerator.swift in Sources */,
 				553278A81FB1AB05009320F3 /* OTPKeyURIDecoder.swift in Sources */,
 				553278A91FB1AB05009320F3 /* OTPKeyURIEncoder.swift in Sources */,
@@ -539,7 +594,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				553278BE1FB1ABA0009320F3 /* OTP+Base32.swift in Sources */,
-				553278B81FB1ABA0009320F3 /* HMAC.swift in Sources */,
 				553278B91FB1ABA0009320F3 /* OTPGenerator.swift in Sources */,
 				553278BC1FB1ABA0009320F3 /* OTPKeyURIDecoder.swift in Sources */,
 				553278BD1FB1ABA0009320F3 /* OTPKeyURIEncoder.swift in Sources */,
@@ -553,7 +607,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				553278D41FB1AC1A009320F3 /* OTP+Base32.swift in Sources */,
-				553278CE1FB1AC1A009320F3 /* HMAC.swift in Sources */,
 				553278CF1FB1AC1A009320F3 /* OTPGenerator.swift in Sources */,
 				553278D21FB1AC1A009320F3 /* OTPKeyURIDecoder.swift in Sources */,
 				553278D31FB1AC1A009320F3 /* OTPKeyURIEncoder.swift in Sources */,
@@ -566,13 +619,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553278F71FB1AE83009320F3 /* HMACTests.swift in Sources */,
 				553278F91FB1AE83009320F3 /* OTPKeyTests.swift in Sources */,
 				553278FE1FB1AE83009320F3 /* TestUtilities.swift in Sources */,
 				553278F81FB1AE83009320F3 /* OTPGenerationTests.swift in Sources */,
 				553278FB1FB1AE83009320F3 /* OTPKeyURIEncoderTests.swift in Sources */,
 				553278FA1FB1AE83009320F3 /* OTPKeyURIDecoderTests.swift in Sources */,
-				553278FC1FB1AE83009320F3 /* HMACTestVector.swift in Sources */,
 				553278FD1FB1AE83009320F3 /* TOTPTestVector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,13 +632,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553278FF1FB1AE84009320F3 /* HMACTests.swift in Sources */,
 				553279011FB1AE84009320F3 /* OTPKeyTests.swift in Sources */,
 				553279061FB1AE84009320F3 /* TestUtilities.swift in Sources */,
 				553279001FB1AE84009320F3 /* OTPGenerationTests.swift in Sources */,
 				553279031FB1AE84009320F3 /* OTPKeyURIEncoderTests.swift in Sources */,
 				553279021FB1AE84009320F3 /* OTPKeyURIDecoderTests.swift in Sources */,
-				553279041FB1AE84009320F3 /* HMACTestVector.swift in Sources */,
 				553279051FB1AE84009320F3 /* TOTPTestVector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,7 +650,6 @@
 				55C496A01FB1075D0034577C /* OTP+Base32.swift in Sources */,
 				55DDEB891FB0E987004E713B /* OTPKeyURIDecoder.swift in Sources */,
 				55DD56A21FB0ADCB008B62BE /* OTPGenerator.swift in Sources */,
-				5562B4BC1FB08BB1000E0F88 /* HMAC.swift in Sources */,
 				55DDEB8B1FB0EA58004E713B /* OTPKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,8 +664,6 @@
 				55DD56A91FB0B838008B62BE /* OTPGenerationTests.swift in Sources */,
 				55DDEB8D1FB0ED03004E713B /* OTPKeyURIDecoderTests.swift in Sources */,
 				55EFB1101FB11A1500801D78 /* OTPKeyURIEncoderTests.swift in Sources */,
-				5562B4A31FB087FE000E0F88 /* HMACTests.swift in Sources */,
-				5562B4BF1FB08F4A000E0F88 /* HMACTestVector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +699,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -661,7 +712,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/watchos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -679,6 +729,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -687,7 +742,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/watchos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -705,6 +759,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -713,7 +771,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/tvos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -731,6 +788,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -739,7 +800,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/tvos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -758,6 +818,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -768,7 +832,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/macos;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -785,6 +848,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -795,7 +862,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/macos;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -806,6 +872,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTPTests-tvOS";
@@ -823,6 +893,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.OTP.OTPTests-tvOS";
@@ -842,6 +916,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -861,6 +939,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -997,6 +1079,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1007,7 +1093,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/ios;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1028,6 +1113,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTP-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1038,7 +1127,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/modules/ios;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -1053,6 +1141,10 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1071,6 +1163,10 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Configs/OTPTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

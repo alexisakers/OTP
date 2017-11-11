@@ -5,6 +5,7 @@
 
 import Foundation
 import OTP
+import Crypto
 
 struct TOTPTestVector {
 

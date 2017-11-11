@@ -4,6 +4,7 @@
  */
 
 import Foundation
+import Crypto
 
 /**
  * Represents a standard Time-Based One-Time Password Key.
